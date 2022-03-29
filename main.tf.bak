@@ -6,5 +6,5 @@ provider "aws" {
 resource "aws_instance" "myFirstInstance" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  security-group-ids = vat.security-group-ids
+  security_groups= [var.security_group]
   }
