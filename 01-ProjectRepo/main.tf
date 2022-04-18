@@ -10,7 +10,7 @@ resource "aws_instance" "myFirstInstance" {
   instance_type = var.instance_type
   }
 
-output "instance_ip_addr" {
-  value = "aws_instance.myFirstInstance.private_ip"
-  description = "The private IP address of the main server instance."
+output "public_ip" {
+  value = "aws_instance.myFirstInstance.public_ip"
+  description = "The public_ip address of the main server instance."
 }
